@@ -1,6 +1,10 @@
 //requireds (Propio de Node)
 const fs = require('fs');
 
+//require externo
+const colors = require('colors');
+
+
 // module.exports.crearArchivo = ( base ) => {
 //     return new Promise((resolve,reject) => {
 //         let data = '';
@@ -24,9 +28,9 @@ const fs = require('fs');
 let listarTabla = ( base, limite=10 ) => {
     let data = '';
     for (let index = 0; index <= limite ; index++) {
-        data += `${ base } * ${ index } = ${ base*index } \n`;
+        data += `${ base } * ${ index } = ${ base*index }`.black + '\n';
     }
-    console.log(data);
+    console.log(data.bgYellow);
 }
 
 let crearArchivo = ( base, limite=10 ) => {
