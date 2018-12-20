@@ -1,5 +1,11 @@
 ﻿# FileNode
 
+## Install 
+
+$ npm install
+
+## Resume
+
 Aplicacion hecha con YARGS de linea de comandos para imprimir en consola una tabla de multiplicar dada una base y un limite.
 
 y crear un archivo con la tabla tabla de multiplicar dada una base y un limite
